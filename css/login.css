@@ -1,0 +1,33 @@
+.gradient-custom {
+    background: #84fab0;
+    
+    background: -webkit-linear-gradient(to right, #84fab0, rgb(37, 252, 152));
+
+    background: linear-gradient(to right, #84fab0, rgb(37, 252, 152));
+}
+.card{
+
+    background: #6a11cb;
+
+    background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+    
+}
+.h2{
+    color : #f7941d ;
+}
+.error{
+    color: red;
+    font-size: 1rem;
+}
+.mb-0{
+    margin-left: 20px;
+}
+.register{
+    margin-bottom: 20px;
+}
+.form-outline > input{
+    height: 40px;
+    color: #252525;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./font-size/fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="./css/basic.css">
+</head>
+<body>
+    <div class="cart">
+        <div class="cart-background">
+            <div class="cart-title">
+                <h1>Cart</h1>
+                <div class="cart-destination">
+                    <a href="#" class="text-from">Home</a>
+                    <i class="fa-solid fa-angle-right text-white ms-2 me-2"></i>
+                    <span class="text-warning text-to">Cart</span>
+                </div>
+            </div>
+        </div>
+        <div class="cart-detail">
+            <div class="container">
+                <div class="cart-detail__header">
+                    <h1>Your Cart</h1>
+                </div>
+
+                <div class="cart-detail__body">
+                    <table>
+                        <thead class="border-bottom border-warning">
+                            <tr class="row">
+                                <th class="col-6" style="padding-left: 120px;">Product</th>
+                                <th class="col-2 d-flex justify-content-center ">Price</th>
+                                <th class="col-2 d-flex justify-content-center ">Quantity</th>
+                                <th class="col-2 d-flex justify-content-center ">Total</th>
+                            </tr>
+                        </thead>
+
+                        <tbody style="border-bottom: 1px solid #ebebeb;"> 
+                            <tr class="row align-items-center mt-3 mb-3">
+                                <td class="title-prd col-6 d-flex align-items-center">
+                                    <i class="fa-solid fa-square-xmark"></i>
+                                    <a href="#">
+                                        <img src="/techwid3/public/image/aochongnangnu.webp" title="áo chống nắng">
+                                    </a>
+                                    <div class="decribe">
+                                        <a href="">Ghế luxury</a>
+                                        <h3>Đen/Nhỏ</h3>
+                                    </div>
+                                </td>
+                                <td class="price-prd col-2 d-flex justify-content-center">$50.99</td>
+                                <td class="quantity-prd col-2 d-flex justify-content-center">
+                                    <div class="buttons_added">
+                                        <input class="minus is-form" type="button" value="-">
+                                        <input aria-label="quantity" class="input-qty" max="10" min="1" name="" type="number" value="1">
+                                        <input class="plus is-form" type="button" value="+">
+                                      </div>
+                                </td>
+                                <td class="total-prd col-2 d-flex justify-content-center">$100.32</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="cart-own pt-3">
+                        <div class="cart-total d-flex justify-content-end align-items-center pb-3">
+                            <h2>Tổng số thành tiền:</h2>
+                            <span>$2000.199</span>
+                        </div>
+
+                        <div class="cart-checkout d-flex justify-content-end align-items-center">
+                            <button type="button" class=" me-3"> Tiếp tục mua hàng</button>
+                            <button type="button" class="">Tiến hành thanh toán</button>
+                        </div>
+                    </div>
+
+                    <div class="no-product d-none">
+                        <span style="color: var(--text-color); font-size: 0.938rem;">
+                            Không có sản phẩm nào trong giỏ hàng. Quay lại <a href="#">cửa hàng</a> để tiếp tục mua sắm.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="crossorigin="anonymous"referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/cart.js"></script>
+</body>
+</html>

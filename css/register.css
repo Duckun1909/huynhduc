@@ -1,0 +1,50 @@
+.regis-contain{
+    max-width: 500px;
+    padding: 10px;
+    background: #84fab0;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+.error{
+    text-align: center;
+    color: red;
+    font-size: 1rem;
+}
+.regis-title h3{
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.25rem;
+    color:#f7941d;
+
+}
+.checkbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+.checkbox > div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.checkbox .agree {
+    width: 25px;
+    height: 25px;
+}
+.checkbox label{
+    height: 25px;
+    font-size: 20px;
+    font: bold;
+    align-items: center;
+    color: #6c757d;
+    padding-left: 5px;
+}
+.checkbox .btn {
+    /* float: right; */
+    margin-left: 190px;
+}
+.form-group a{
+    text-decoration: none;
+    margin-top: 5px;
+}
