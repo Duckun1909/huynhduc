@@ -1,0 +1,457 @@
+{
+    "product" : [
+        {
+            "id": 1,
+            "name": "Áo khoác gió nam YODY",
+            "price":"259.000đ",
+            "quantity":4.0,
+            "status": "còn hàng",
+            "sold":290,
+            "sale": "mua 2 giảm 20.000đ",
+            "avatar" : "../public/image/imageProduct/aoYody.jpg",
+            "shirt" : {
+                "id": 1,
+
+                "color" :[ 
+                    {
+                        "id" : 1,
+                        "color" : "brown",
+                        "image" : "../public/image/imageProduct/aoYodybrown.jpg"
+                    },
+                    {
+                        "id" : 2,
+                        "color" : "white",
+                        "image" : "../public/image/imageProduct/aoYodywhite.jpg"
+                    },
+                    {
+                        "id" : 3,
+                        "color" : "yellow",
+                        "image" : "../public/image/imageProduct/aoYodyyellow.jpg"
+                    }
+                ],
+                "size": [            
+                    {
+                        "id" : 1,
+                        "size" : "M"
+                    },
+                    {
+                        "id" : 2,
+                        "size" : "L"
+                    },
+                    {
+                        "id" : 3,
+                        "size" : "XL"
+                    },
+                    {
+                        "id" : 4,
+                        "size" : "2XL"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "name": "Áo thun Unisex Nam Nữ TEEZ",
+            "price":"80.000đ",
+            "quantity":4.9,
+            "status": "còn hàng",
+            "sold":120,
+            "sale": "Tặng tất cotton cao cấp",
+            "avatar" : "../public/image/imageProduct/aoBossblack.jpg",
+            "shirt" : {
+                "id": 2,
+                "color" :[ 
+                    {
+                        "id" : 1,
+                        "color" : "black",
+                        "image" : "../public/image/imageProduct/aoUnisexblack.jpg"
+                    },
+                    {
+                        "id" : 2,
+                        "color" : "white",
+                        "image" : "../public/image/imageProduct/aoUnisexwhite.jpg"
+                    },
+                    {
+                        "id" : 3,
+                        "color" : "green",
+                        "image" : "../public/image/imageProduct/aoUnisexgreen.jpg"
+                    }
+                ],
+                "size": [            
+                    {
+                        "id" : 1,
+                        "size" : "M"
+                    },
+                    {
+                        "id" : 2,
+                        "size" : "L"
+                    },
+                    {
+                        "id" : 3,
+                        "size" : "XL"
+                    },
+                    {
+                        "id" : 4,
+                        "size" : "2XL"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "name": "Áo Phông Chính Hãng Uniqlo",
+            "price":"110.000đ",
+            "quantity":4.8,
+            "status": "còn hàng",
+            "sold":150,
+            "sale": "mua 2 giảm 10.000đ",
+            "avatar" : "../public/image/imageProduct/aoPhong.jpeg",
+            "shirt" : {
+                "id": 3,
+                "color" :[ 
+                {
+                    "id" : 1,
+                    "color" : "black",
+                    "image" : "../public/image/imageProduct/aoPhongden.jpeg"
+                },
+                {
+                    "id" : 2,
+                    "color" : "blue",
+                    "image" : "../public/image/imageProduct/aoPhong.jpeg"
+                }
+                ],
+                "size": [            
+                    {
+                        "id" : 1,
+                        "size" : "M"
+                    },
+                    {
+                        "id" : 2,
+                        "size" : "L"
+                    },
+                    {
+                        "id" : 3,
+                        "size" : "XL"
+                    },
+                    {
+                        "id" : 4,
+                        "size" : "2XL"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 4,
+            "name": "Áo Polo Boss",
+            "price":"210.000đ",
+            "quantity":4.9,
+            "status": "còn hàng",
+            "sold":220,
+            "sale": "mua 2 giảm 30.000đ",
+            "avatar" : "../public/image/imageProduct/aoBoss.jpg",
+            "shirt" : {
+                "id": 4,
+                "color" :[ 
+                {
+                    "id" : 1,
+                    "color" : "black",
+                    "image" : "../public/image/imageProduct/aoBossblack.jpg"
+                },
+                {
+                    "id" : 2,
+                    "color" : "gray",
+                    "image" : "../public/image/imageProduct/aoBossxam.jpg"
+                }
+                ],
+                "size": [            
+                    {
+                        "id" : 1,
+                        "size" : "M"
+                    },
+                    {
+                        "id" : 2,
+                        "size" : "L"
+                    },
+                    {
+                        "id" : 3,
+                        "size" : "XL"
+                    },
+                    {
+                        "id" : 4,
+                        "size" : "2XL"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 5,
+            "name": "Áo Chống Nắng Nữ TOKYOLIFE",
+            "price":"280.000đ",
+            "quantity":4.9,
+            "status": "còn hàng",
+            "sold":350,
+            "sale": "mua 2 giảm 10%",
+            "avatar" : "../public/image/imageProduct/aochongnangnu.jpg",
+            "shirt" : {
+                "id": 5,
+                "color" :[ 
+                {
+                    "id" : 1,
+                    "color" : "blue",
+                    "image" : "../public/image/imageProduct/aochongnangnuxanh.jpg"
+                },
+                {
+                    "id" : 2,
+                    "color" : "orange",
+                    "image" : "../public/image/imageProduct/aochongnangnuCam.jpg"
+                }
+                ],
+                "size": [   
+                    {
+                        "id" : 1,
+                        "size" : "S"
+                    },         
+                    {
+                        "id" : 2,
+                        "size" : "M"
+                    },
+                    {
+                        "id" : 3,
+                        "size" : "L"
+                    },
+                    {
+                        "id" : 4,
+                        "size" : "XL"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 6,
+            "name": "Áo trễ vai bèo tay phồng AQT",
+            "price":"40.000đ",
+            "quantity":4.7,
+            "status": "còn hàng",
+            "sold":570,
+            "sale": "giảm 20%",
+            "avatar" : "../public/image/imageProduct/aonu.jpg",
+            "shirt" : {
+                "id": 6,
+                "color" :[ 
+                {
+                    "id" : 1,
+                    "color" : "white",
+                    "image" : "../public/image/imageProduct/aonuWhite.jpg"
+                },
+                {
+                    "id" : 2,
+                    "color" : "pink",
+                    "image" : "../public/image/imageProduct/aonuPink.jpg"
+                },
+                {
+                    "id" : 3,
+                    "color" : "green",
+                    "image" : "../public/image/imageProduct/aonuGreen.jpg"
+                }
+                ],
+                "size": [   
+                    {
+                        "id" : 1,
+                        "size" : "S"
+                    },         
+                    {
+                        "id" : 2,
+                        "size" : "M"
+                    },
+                    {
+                        "id" : 3,
+                        "size" : "L"
+                    },
+                    {
+                        "id" : 4,
+                        "size" : "XL"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 7,
+            "name": "Quần KAKI ống rộng",
+            "price":"50.000đ",
+            "quantity":4.6,
+            "status": "còn hàng",
+            "sold":620,
+            "sale": "giảm 30%",
+            "avatar" : "../public/image/imageProduct/quannam.jpg",
+            "pant" : {
+                "id": 7,
+                "color" :[ 
+                {
+                    "id" : 1,
+                    "color" : "white",
+                    "image" : "../public/image/imageProduct/quannamBe.jpg"
+                },
+                {
+                    "id" : 2,
+                    "color" : "black",
+                    "image" : "../public/image/imageProduct/quannamden.jpg"
+                }
+                ],
+                "size": [   
+                    {
+                        "id" : 1,
+                        "size" : "S"
+                    },         
+                    {
+                        "id" : 2,
+                        "size" : "M"
+                    },
+                    {
+                        "id" : 3,
+                        "size" : "L"
+                    },
+                    {
+                        "id" : 4,
+                        "size" : "XL"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 8,
+            "name": "Quần Short thể thao cho Nam",
+            "price":"45.000đ",
+            "quantity":4.6,
+            "status": "còn hàng",
+            "sold":110,
+            "sale": "giảm 10%",
+            "avatar" : "../public/image/imageProduct/quanshort.jpg",
+            "pant" : {
+                "id": 8,
+                "color" :[ 
+                {
+                    "id" : 1,
+                    "color" : "blue",
+                    "image" : "../public/image/imageProduct/quanshortxanh.jpg"
+                },
+                {
+                    "id" : 2,
+                    "color" : "black",
+                    "image" : "../public/image/imageProduct/quanshortden.jpg"
+                }
+                ],
+                "size": [   
+                    {
+                        "id" : 1,
+                        "size" : "S"
+                    },         
+                    {
+                        "id" : 2,
+                        "size" : "M"
+                    },
+                    {
+                        "id" : 3,
+                        "size" : "L"
+                    },
+                    {
+                        "id" : 4,
+                        "size" : "XL"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 9,
+            "name": "Quần ống rộng nữ",
+            "price":"90.000đ",
+            "quantity":4.9,
+            "status": "còn hàng",
+            "sold":230,
+            "sale": "giảm 15%",
+            "avatar" : "../public/image/imageProduct/quannu.jpg",
+            "pant" : {
+                "id": 9,
+
+                "color" :[ 
+                {
+                    "id" : 1,
+                    "color" : "white",
+                    "image" : "../public/image/imageProduct/quannutrang.jpg"
+                },
+                {
+                    "id" : 2,
+                    "color" : "black",
+                    "image" : "../public/image/imageProduct/quannuden.jpg"
+                },
+                {
+                    "id" : 3,
+                    "color" : "violet",
+                    "image" : "../public/image/imageProduct/quannutim.jpg"
+                }
+                ],
+                "size": [   
+                    {
+                        "id" : 1,
+                        "size" : "S"
+                    },         
+                    {
+                        "id" : 2,
+                        "size" : "M"
+                    },
+                    {
+                        "id" : 3,
+                        "size" : "L"
+                    },
+                    {
+                        "id" : 4,
+                        "size" : "XL"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 10,
+            "name": "Chân váy thời trang cho Nữ",
+            "price":"120.000đ",
+            "quantity":4.7,
+            "status": "còn hàng",
+            "sold":330,
+            "sale": "giảm 12%",
+            "avatar" : "../public/image/imageProduct/chanvay.jpg",
+            "skirt" : {
+                "id": 10,
+
+                "color" :[ 
+                {
+                    "id" : 1,
+                    "color" : "white",
+                    "image" : "../public/image/imageProduct/chanvaytrang.jpg"
+                },
+                {
+                    "id" : 2,
+                    "color" : "black",
+                    "image" : "../public/image/imageProduct/chanvayden.jpg"
+                }
+                ],
+                "size": [   
+                    {
+                        "id" : 1,
+                        "size" : "S"
+                    },         
+                    {
+                        "id" : 2,
+                        "size" : "M"
+                    },
+                    {
+                        "id" : 3,
+                        "size" : "L"
+                    },
+                    {
+                        "id" : 4,
+                        "size" : "XL"
+                    }
+                ]
+            }
+        }
+    ]
+}
