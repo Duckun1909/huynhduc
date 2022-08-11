@@ -34,6 +34,16 @@
     }
 }
 
+@keyframes rotateXOut{
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(-90deg);
+        opacity: 0;
+    }
+}
+
 
 /* header logo */
 .header .logo{
@@ -192,11 +202,11 @@
 }
 .sub-menu{
     width: 215px;
-    display: none;
     transform-origin: top;
     box-shadow: 0 1px 2px 2px rgba(0,0,0,0.2);
-     z-index: 1;
-     background-color:#fff
+    z-index: 1;
+    background-color: #fff;
+    animation: rotateXOut .3s linear forwards;
 }
 .sub-menu ul{
     border-radius: unset;
@@ -216,8 +226,7 @@
 }
 .product_menu:hover .sub-menu{
     perspective-origin: left;
-    display: block;
-    animation: rotateXIn .5s linear;
+    animation: rotateXIn .3s linear forwards;
 }
 
 /* Hotline header */
