@@ -8,6 +8,8 @@ $(document).ready(function() {
         console.log(use_lst)
         var email = data.get("email")
         var password = data.get("password")
+                console.log(email, password)
+
 
         $(use_lst).each(function(index, val){
             if(val.email == email && val.password == password){
