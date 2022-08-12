@@ -271,3 +271,16 @@ var removeHandle = ()=>{
     })
 }
 
+// Visted
+$( window ).on('load' ,function() {
+    var visited = localStorage.getItem('visited');
+    if(visited == null){
+        localStorage.setItem('visited', '1');
+    }else{
+        console.log(visited)
+        localStorage.setItem('visited', ++visited);
+        $('.visited .quantity')[0].innerText = visited;
+    }
+});
+
+
