@@ -6,6 +6,7 @@ $(document).ready(function() {
         var data = new FormData(e.target)
         var use_lst = JSON.parse(localStorage.getItem("lst_usr"))
         console.log(use_lst)
+        console.log(data);
         var email = data.get("email")
         var password = data.get("password")
                 console.log(email, password)
