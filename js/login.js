@@ -17,7 +17,7 @@ $(document).ready(function() {
         if(checkLogin == 1){
             alert('Login successfully');
             $.ajax({
-                url: '../home.html',
+                url: 'home.html',
                 type: 'GET', 
                 dataType: 'html',
                 success: function(data) {
@@ -34,7 +34,7 @@ $(document).ready(function() {
 //  register ajax
 $('.to_register').click(function(){
     $.ajax({
-        url: '../register.html',
+        url: 'register.html',
         type: 'GET',
         dataType: 'html',
         success: function(data){
