@@ -82,7 +82,7 @@
 }
 
 /* header account */
-.account a{
+.account span{
     text-decoration: none;
     color: var(--text-color);
     text-transform: uppercase;
@@ -94,7 +94,7 @@
     font-size: 14px;
     font-weight: bold;
 }
-.account-hover:hover a{
+.account-hover:hover span{
     color: var(--hover-color);
     transition: all .2s linear;
 
