@@ -44,11 +44,17 @@ setInterval(function(){
         $('#min')[0].innerText++;
     }
 
+    if($('#min')[0].innerText < 10){
+        $('#min')[0].innerText = '0' + minute;
+    }
     if($('#min')[0].innerText==60){
         $('#min')[0].innerText = 0;
         $('#hours')[0].innerText++;
     }
 
+    if($('#hours')[0].innerText < 10){
+        $('#hours')[0].innerText = '0' + minute;
+    }
     if($('#hours')[0].innerText==24){
         $('#hours')[0].innerText = 0;
         $('#min')[0].innerText = 0;
