@@ -1,46 +1,46 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <section class="container regis-contain">
+<section class="regis-contain pt-3">
+        <div class="background-register">
+            <div class="background__info">
+                <p class="background__info__title">REGISTER</p>
+                <div class="background__homepage">
+                    <a href=""><span>HOME</span></a>
+                    <i class="fa fa-angle-right"></i>
+                    <span class="intro__title">REGISTER</span>
+                </div>
+            </div>
+        </div>
         <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-12 ">
+            <div class="col-12 margin-register">
                 <form action="" method="post" id="register" >
                     <div class="form-group regis-title">
                         <h3>Register Account</h3>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group input">
                         <input class="form-control" type="text" id="username" name="username" minlength="3" maxlength="20" required placeholder="Username">                        
                     </div>
-                    <div class="form-group">
+                    <div class="form-group input">
                         <input class="form-control" type="email" id="email" name="email" minlength="3" maxlength="20" required placeholder="Email">                        
                     </div>
-                    <div class="form-group">
+                    <div class="form-group input">
                         <input class="form-control" type="password" id="password" name="password" minlength="3" maxlength="20" required placeholder="Password">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group input">
                         <input class="form-control" type="password" id="confirmpassword" name="confirmpassword" minlength="3" maxlength="20" required placeholder="Confirm password">
                     </div>
-                    <div class="checkbox ">
-                        <div>
-                            <input type="checkbox" id="agree" name = "agree" class="agree"  ><label>I agree to the terms</label>
-                            
+                    <div class="d-flex align-items-center justify-content-between checkbox" >
+                        <div class="d-flex align-items-center justify-content-between">
+                            <input type="checkbox" id="agree" name = "agree" class="agree align-items-center"  ><label>I agree to the terms</label>    
                         </div>
-                        <input type="submit" value="Register" name="register"  class="btn btn-primary ">
+                        <div class="form-group">
+                            <input type="submit" value="Register" name="register"  class="btn btn-primary ">
+                        </div>
                     </div>
                     <div class="form-group">
-                        <a href="./login.html">I already have a account</a>
+                        <span class="to_login" style="color: blue; cursor: pointer;">I already have an account</span>
                     </div>
+                    <div id="error"></div>
                 </form>
             </div>
         </div>
         <script src="./js/register.js"></script>
     </section>
-</body>
-</html>
