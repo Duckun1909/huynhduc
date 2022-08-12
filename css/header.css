@@ -112,7 +112,6 @@
 }
 .cart-quantity{
     background-color: #000084;
-    color: #fff;
     width: 23px;
     height: 23px;
     left: 33px !important;
@@ -120,6 +119,7 @@
 }
 .cart-quantity span{
     font-size: 0.813rem;
+    color: #fff;
 }
 .cart-content{
     width: 300px;
