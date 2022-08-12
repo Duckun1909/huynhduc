@@ -22,9 +22,11 @@ $(document).ready(function() {
     })
   })
 
+// Nav bar
 $('.containers ul li').click(function(e) {
     $(this).addClass('nav-active').siblings().removeClass('nav-active');
 }) 
+
 
 //Ticker
 let localDate = new Date();
