@@ -5,6 +5,64 @@ $(document).ready(function() {
         dataType: 'html',
         success: function(data) {
             $('.body').html(data);
+            
+            setTimeout(function() {
+                let lst_product = [];
+                let addCart_arr = $('.addCart')
+                let prd_id;
+                let cart_arr = []
+                addCart_arr.click(function(){
+                    prd_id = $(this).attr('cart-index');
+                    $.ajax({
+                        url: './data/data.json',
+                        type: 'GET',
+                        dataType: 'html',
+                        success: function(data) {
+                            lst_product = JSON.parse(data).product
+                            $(lst_product).each(function(index, value){
+                                if(prd_id == value.id){
+                                    let checkCart = JSON.parse(localStorage.getItem('cart'))
+                                    if(checkCart==null){
+                                        cart_arr.push(value)
+                                        localStorage.setItem('cart', JSON.stringify(cart_arr))
+                                    }else{
+                                        cart_arr = checkCart;
+                                        $(cart_arr).each(function(index, value_local){
+                                            if(value_local.id == prd_id){
+                                                cart_arr.splice(index, 1)
+                                            }
+                                        })
+                                        cart_arr.push(value)
+                                        localStorage.setItem('cart', JSON.stringify(cart_arr))
+                                        $('.cart-quantity span')[0].innerText = cart_arr.length;
+                                        console.log(cart_arr)
+                                        $('.cart-content_lst').html(null);
+                                        $(cart_arr).each(function(index, value){
+                                            var cart_html = `
+                                                <div class="cart-content_item d-flex pb-3">
+                                                    <i class="fa-solid fa-xmark btn-remove" remove-index="${value.id}"></i>
+                                                    <a class="img" href="#"><img src="${value.image}" width="70px" alt=""></a>
+                                                    <div class="decribe">
+                                                    <a href="#">${value.name}</a>
+                                                    <div class="price">
+                                                        <span>${'$' + value.price}</span>
+                                                        <span> x 1</span>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            `
+                                            $('.cart-content_lst').append(cart_html);
+                                        })
+                                    }
+                                }
+                            })
+                            
+                        }
+                    })
+                })
+                renderCart();
+                removeHandle();
+            } , 1000);
         }
     })
 
