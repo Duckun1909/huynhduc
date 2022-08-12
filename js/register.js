@@ -22,7 +22,7 @@ $('#register').on('submit',function(e){
         this.reset();
         alert('Register successfully');
         $.ajax({
-            url: 'home.html',
+            url: './home.html',
             type: 'GET',
             dataType: 'html',
             success: function(data) {
@@ -37,7 +37,7 @@ $('#register').on('submit',function(e){
 // login ajax
 $('.to_login').click(function(){
     $.ajax({
-        url: 'login.html',
+        url: './login.html',
         type: 'GET',
         dataType: 'html',
         success: function(data){
