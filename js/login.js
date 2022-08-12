@@ -1,22 +1,45 @@
-$('#login').on('submit', function (e) {
-    e.preventDefault();
-    var loginemail = $('#email').val();
-    var loginpassword = $('#password').val();
-    var lst_user =  [];
-    let checklogin = 0;
-    lst_user = JSON.parse(localStorage.getItem('lst_user'));
+$(document).ready(function() {
+    const form = document.querySelector(".login");
+    let checkLogin = 0;
+    $(form).submit(function(e) {
+        e.preventDefault();
+        var data = new FormData(e.target)
+        var use_lst = JSON.parse(localStorage.getItem("lst_usr"))
+        console.log(use_lst)
+        var email = data.get("email")
+        var password = data.get("password")
 
-    lst_user.forEach( (elem,index) => {
-        if((elem.password == loginpassword && elem.email == loginemail)){
-            checklogin = 1 ;
+        $(use_lst).each(function(index, val){
+            if(val.email == email && val.password == password){
+                checkLogin = 1;
+            }
+        })
+        if(checkLogin == 1){
+            alert('Login successfully');
+            $.ajax({
+                url: '../home.html',
+                type: 'GET',
+                dataType: 'html',
+                success: function(data) {
+                    $('.body').html(data)
+                }
+            })
+        }else{
+            alert('Email or password is incorrect');
         }
-    });
-    if(checklogin == 0 ){
-        var form = $('form');
-        var error= document.createElement('div');
-        error.innerHTML = `<div class="error">Invalid email or password</div>`;
-        form.append(error);
-    }else{
-        this.submit();
-    }
-});
+
+    })
+})
+
+//  register ajax
+$('.to_register').click(function(){
+    $.ajax({
+        url: '../register.html',
+        type: 'GET',
+        dataType: 'html',
+        success: function(data){
+            $('.body').html(data);
+        }
+        
+    })
+})
