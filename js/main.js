@@ -68,7 +68,7 @@ $(document).ready(function() {
 
     $('.btn-regis').click(()=>{
         $.ajax({
-            url: './register.html',
+            url: '../register.html',
             type: 'GET',
             dataType: 'html',
             success: function(data) {
