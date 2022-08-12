@@ -87,9 +87,9 @@ setInterval(function () {
 
   if($('#hours')[0].innerText<10 && checkTicker == 0){
     $('#hours')[0].innerText = '0' + hours;
-    checkClick = 1;
+    checkTicker = 1;
   }else if($('#hours')[0].innerText > 10){
-    checkClick = 0;
+    checkTicker = 0;
   }
 
 }, 1000);
