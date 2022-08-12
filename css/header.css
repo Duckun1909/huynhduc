@@ -296,3 +296,45 @@
     color: rgb(245, 56, 56);
     margin-bottom: 4px;
 }
+
+.ticker{
+    width: fit-content;
+    padding: 20px;
+    background: #f3ebf0;
+    opacity: .8;
+    position: fixed;
+    bottom: 0px;
+    right: 0px
+}
+.clock {
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    color: rgb(10, 10, 10);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#Date {
+    font-family: 'BebasNeueRegular', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    text-shadow: 0 0 5px #00c6ff;
+}
+
+.ultime {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+}
+
+.ultime>li {
+    display: inline;
+    font-size: 2em;
+    text-align: center;
+    font-family: 'BebasNeueRegular', Arial, Helvetica, sans-serif;
+    text-shadow: 0 0 5px #00c6ff;
+}
