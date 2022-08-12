@@ -9,7 +9,22 @@ $(document).ready(function() {
             }
         })
     })
+    
+    $('.btn-login').click(()=>{
+        $.ajax({
+            url: '../login.html',
+            type: 'GET',
+            dataType: 'html',
+            success: function(data) {
+                $('.body').html(data);
+            }
+        })
+    })
   })
+
+$('.containers ul li').click(function(e) {
+    $(this).addClass('nav-active').siblings().removeClass('nav-active');
+}) 
 
 //Ticker
 let localDate = new Date();
