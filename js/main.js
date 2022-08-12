@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $.ajax({
-        url: '../home.html',
+        url: './home.html',
         type: 'GET',
         dataType: 'html',
         success: function(data) {
