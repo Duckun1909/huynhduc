@@ -18,7 +18,7 @@ $(document).ready(function() {
             alert('Login successfully');
             $.ajax({
                 url: '../home.html',
-                type: 'GET',
+                type: 'GET', 
                 dataType: 'html',
                 success: function(data) {
                     $('.body').html(data)
