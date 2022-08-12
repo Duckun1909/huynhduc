@@ -47,7 +47,8 @@ $('#hours')[0].innerText = hour;
 $('#min')[0].innerText = minute;
 $('#sec')[0].innerText = second;
 
-let checkTicker = 0;
+let checkMin = 0;
+let checkHour = 0
 let min = $('#min')[0].innerText;
 let hours = $('#hours')[0].innerText;
 console.log(min)
@@ -67,12 +68,13 @@ setInterval(function () {
     }
   }
 
-  if ($('#min')[0].innerText < 10 && checkTicker == 0) {
+  if ($('#min')[0].innerText < 10 && checkMin == 0) {
     $('#min')[0].innerText = '0' + min;
-    checkTicker = 1;
-  } else if ($('#min')[0].innerText > 10) {
-    checkTicker = 0
+    checkMin = 1;
+  } else{
+    checkMin = 0
   }
+
 
   if(min==60){
     min = 0;
@@ -85,11 +87,11 @@ setInterval(function () {
     }
   }
 
-  if($('#hours')[0].innerText<10 && checkTicker == 0){
+  if($('#hours')[0].innerText<10 && checkHour == 0){
     $('#hours')[0].innerText = '0' + hours;
-    checkTicker = 1;
-  }else if($('#hours')[0].innerText > 10){
-    checkTicker = 0;
+    checkHour = 1;
+  }else{
+    checkHour = 0;
   }
 
 }, 1000);
