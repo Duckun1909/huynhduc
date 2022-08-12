@@ -3,28 +3,46 @@ function user(username,email,password) {
     this.email = email;
     this.password = password;
 }
-
 $('#register').on('submit',function(e){
     e.preventDefault();
-    console.log(1);
-    let lst_user = [];
     var username = $('#username').val();
     var email = $('#email').val();
     var password = $('#password').val();
     var comfirmpassword = $('#confirmpassword').val();
     var agree = $('input[name="agree"]:checked');
-    
-    var local_user = localStorage.getItem('lst_user');
-
     if(comfirmpassword == password){
         var new_user = new user(username, email, password);
+        console.log(new_user);
+        var lst_user = JSON.parse(localStorage.getItem('lst_usr'));
+        if(lst_user == null){
+            lst_user = [];
+        }
         lst_user.push(new_user);
-        console.log(lst_user);
-        localStorage.setItem('lst_user', JSON.stringify(lst_user));
+        localStorage.setItem('lst_usr', JSON.stringify(lst_user));
+        this.reset();
+        alert('Register successfully');
+        $.ajax({
+            url: '../home.html',
+            type: 'GET',
+            dataType: 'html',
+            success: function(data) {
+                $('.body').html(data)
+            }
+        })
     }else{
-        var form = $('#register');
-        var error= document.createElement('div');
-        error.innerHTML = `<div class="error">Passwords do not match</div>`;
-        form.append(error);
+        alert('Password is not match');
     }
 });
+
+// login ajax
+$('.to_login').click(function(){
+    $.ajax({
+        url: '../login.html',
+        type: 'GET',
+        dataType: 'html',
+        success: function(data){
+            $('.body').html(data);
+        }
+        
+    })
+})
