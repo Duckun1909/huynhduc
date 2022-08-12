@@ -17,8 +17,8 @@ $(document).ready(function() {
         if(checkLogin == 1){
             alert('Login successfully');
             $.ajax({
-                url: 'home.html',
-                type: 'GET', 
+                url: './home.html',
+                type: 'GET',
                 dataType: 'html',
                 success: function(data) {
                     $('.body').html(data)
@@ -34,12 +34,12 @@ $(document).ready(function() {
 //  register ajax
 $('.to_register').click(function(){
     $.ajax({
-        url: 'register.html',
+        url: './register.html',
         type: 'GET',
         dataType: 'html',
         success: function(data){
             $('.body').html(data);
         }
-         
+        
     })
 })
