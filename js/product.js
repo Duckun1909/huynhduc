@@ -1,3 +1,5 @@
+$(document).ready(function() {
+  
 const q = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
@@ -101,8 +103,8 @@ function handleData(data) {
                               <div class="sold">sold:  <span>50</span></div>
                             </div>
                             <div class="statuss">
-                              <div class="addCart">Add cart</div>
-                              <div class="buyProduct">Buy</div>
+                              <div class="addCart" cart-index='${valueProduct.id}' >Add cart</div>
+                              <div class="buyProduct" cart-index='${valueProduct.id}'>Buy</div>
                             </div>
 
                           </div>
@@ -225,3 +227,5 @@ function t(valuejson) {
 
   resultsBar.insertAdjacentHTML("beforeend", div);
 }
+
+})
