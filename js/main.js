@@ -10,7 +10,7 @@ $(document).ready(function() {
 
     $('.btn-regis').click(()=>{
         $.ajax({
-            url: '../register.html',
+            url: './register.html',
             type: 'GET',
             dataType: 'html',
             success: function(data) {
@@ -21,7 +21,7 @@ $(document).ready(function() {
 
     $('.btn-login').click(()=>{
         $.ajax({
-            url: '../login.html',
+            url: './login.html',
             type: 'GET',
             dataType: 'html',
             success: function(data) {
@@ -32,7 +32,7 @@ $(document).ready(function() {
 
     $('.btn-home').click(()=>{
         $.ajax({
-            url: '../home.html',
+            url: './home.html',
             type: 'GET',
             dataType: 'html',
             success: function(data) {
@@ -43,7 +43,7 @@ $(document).ready(function() {
     
     $('.btn-intro').click(()=>{
         $.ajax({
-            url: '../introduce.html',
+            url: './introduce.html',
             type: 'GET',
             dataType: 'html',
             success: function(data) {
@@ -54,7 +54,7 @@ $(document).ready(function() {
 
     $('.btn-contact').click(()=>{
         $.ajax({
-            url: '../contact.html',
+            url: './contact.html',
             type: 'GET',
             dataType: 'html',
             success: function(data) {
