@@ -40,6 +40,6 @@ $('.to_register').click(function(){
         success: function(data){
             $('.body').html(data);
         }
-        
+         
     })
 })
