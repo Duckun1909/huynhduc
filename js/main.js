@@ -32,32 +32,49 @@ $('#hours')[0].innerText = hour;
 $('#min')[0].innerText = minute;
 $('#sec')[0].innerText = second;
 
-setInterval(function(){
-    $('#sec')[0].innerText = ++second;
-    console.log(second);
-    if(second<10){
-        $('#sec')[0].innerText = '0' + second;
+let checkTicker = 0;
+let min = $('#min')[0].innerText;
+let hours = $('#hours')[0].innerText;
+console.log(min)
+setInterval(function () {
+  $('#sec')[0].innerText = ++second;
+  if (second < 10) {
+    $('#sec')[0].innerText = '0' + second;
+  }
+  if (second == 60) {
+    second = 0;
+    $('#sec')[0].innerText = '0' + second;
+    min = ++minute;
+    if (min < 10) {
+      $('#min')[0].innerText = '0' + min;
+    } else {
+      $('#min')[0].innerText = min;
     }
-    if(second == 60){
-        second = 0;
-        $('#sec')[0].innerText = '0' + second;
-        $('#min')[0].innerText++;
-    }
+  }
 
-    if($('#min')[0].innerText < 10){
-        $('#min')[0].innerText = '0' + minute;
-    }
-    if($('#min')[0].innerText==60){
-        $('#min')[0].innerText = 0;
-        $('#hours')[0].innerText++;
-    }
+  if ($('#min')[0].innerText < 10 && checkTicker == 0) {
+    $('#min')[0].innerText = '0' + min;
+    checkTicker = 1;
+  } else if ($('#min')[0].innerText > 10) {
+    checkTicker = 0
+  }
 
-    if($('#hours')[0].innerText < 10){
-        $('#hours')[0].innerText = '0' + minute;
+  if(min==60){
+    min = 0;
+    $('#min')[0].innerText = '0' + min;
+    hours = ++hour;
+    if (hours < 10) {
+      $('#hours')[0].innerText = '0' + hours;
+    } else {
+      $('#hours')[0].innerText = hours;
     }
-    if($('#hours')[0].innerText==24){
-        $('#hours')[0].innerText = 0;
-        $('#min')[0].innerText = 0;
-        second = 0;
-    }
+  }
+
+  if($('#hours')[0].innerText<10 && checkTicker == 0){
+    $('#hours')[0].innerText = '0' + hours;
+    checkClick = 1;
+  }else if($('#hours')[0].innerText > 10){
+    checkClick = 0;
+  }
+
 }, 1000);
