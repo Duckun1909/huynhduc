@@ -68,7 +68,7 @@ $(document).ready(function() {
 
     $('.btn-regis').click(()=>{
         $.ajax({
-            url: './register.html',
+            url: 'register.html',
             type: 'GET',
             dataType: 'html',
             success: function(data) {
@@ -201,11 +201,10 @@ setInterval(function () {
 
 // Visted
 $( window ).on('load' ,function() {
-    var visited = localStorage.getItem('visited');
+    let visited = localStorage.getItem('visited');
     if(visited == null){
         localStorage.setItem('visited', '1');
     }else{
-        console.log(visited)
         localStorage.setItem('visited', ++visited);
         $('.visited .quantity')[0].innerText = visited;
     }
