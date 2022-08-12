@@ -29,7 +29,7 @@
         transform: perspective(600px) rotateX(-90deg);
     }
     to{
-        opacity: 1;
+        opacity: 1; 
         transform: rotateX(0deg);
     }
 }
